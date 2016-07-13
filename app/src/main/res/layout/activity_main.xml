@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.github.abdalimran.sharedpreferencce.MainActivity">
+
+    <TextView
+        android:id="@+id/showText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:text="Shared Preference Text!"
+        android:textColor="#000"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:onClick="save"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/retrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retrive"
+            android:onClick="retrieve"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+</LinearLayout>
